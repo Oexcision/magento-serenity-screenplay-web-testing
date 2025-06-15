@@ -41,4 +41,8 @@ public class MenClothesPage extends PageObject {
 
     public static final Target BTN_PROCEED_CHECKOUT = Target.the("Categoria de Item de NavBar")
             .located(By.xpath("//button[@id='top-cart-btn-checkout']"));
+
+    public static final Target LBL_MESSAGE_WARNING = Target.the("Mensaje de warning de busquedaa inexistente.")
+            .located(By.xpath("//div[@class='message notice']/div"));
+
 }

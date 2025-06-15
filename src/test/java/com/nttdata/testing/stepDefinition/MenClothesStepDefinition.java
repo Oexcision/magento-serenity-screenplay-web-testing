@@ -8,6 +8,7 @@ import com.nttdata.testing.Tasks.LoginTask;
 import com.nttdata.testing.Tasks.NavigateTo;
 import com.nttdata.testing.Tasks.SearchProductTask;
 import com.nttdata.testing.questions.RegisterQuestion;
+import com.nttdata.testing.questions.SearchQuestion;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -66,5 +67,16 @@ public class MenClothesStepDefinition {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    @Then("se muestra mensaje de advertencia {string}")
+    public void seMuestraMensajeDeAdvertencia(String message) {
+        try {
+            theActorInTheSpotlight().should(seeThat("El mensaje de articulo inexistente", SearchQuestion.visibleEn(MenClothesPage.LBL_MESSAGE_WARNING), equalTo(message)));
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
     }
 }

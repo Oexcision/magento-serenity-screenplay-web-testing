@@ -18,4 +18,4 @@ Feature: Buscar un producto, agregarlo al carrito y comprarlo
 
     Examples:
       | email              | contrasenia  | talla | color | item | direccion    | ciudad        | estado    | zip   | Pais          | telefono  |
-      | test0007@gmail.com | Password123@ | L     | Blue  | 1    | Los Jazmines | San Francisco | Alabama   | 13012 | United States | 987654321 |
+      | test0008@gmail.com | Password123@ | L     | Blue  | 1    | Los Jazmines | San Francisco | Alabama   | 13012 | United States | 987654321 |
