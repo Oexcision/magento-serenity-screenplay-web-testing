@@ -1,5 +1,5 @@
 @BuscarProductos
-Feature: Buscar un producto y agregarlo al carrito
+Feature: Buscar un producto y validar inexistencia
 
   @BusquedaProductoInexistente @Unhappypath
   Scenario Outline: Buscar un producto que no existe y validar mensaje de advertencia
